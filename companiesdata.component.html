@@ -1,0 +1,24 @@
+<div  style = "width:1200px">
+    <h3>Companies Data</h3>
+    <div class = "card-header">
+    <a class = "btn btn-success" routerLink="/ddjd">Add Client</a>
+    </div>
+    <div class = "card-body">
+    <table class = "table table-borderd">
+    <thead class =  "bg-dark text-white">
+    <tr>
+        <td>Client Id</td>
+        <td>Financial Year</td>
+        
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of companies">
+        <td style = "width:15%">{{data.clientid}}</td>
+        <td style = "width:15%">{{data.financialyear}}</td>
+          </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    

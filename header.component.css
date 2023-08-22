@@ -1,0 +1,33 @@
+.nav{
+    display:flex;
+    justify-content: space-between;
+    margin-right: 0px;
+}
+.nav ul{
+    display:inline-flex;
+    list-style-type:none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nav li{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:15px;
+}
+.nav li a{
+    text-decoration: none;
+    color:rgb(136, 64, 204);
+    font-size: large;
+    margin-top: 15px;
+}
+h1{
+    font-weight: 500px;
+    padding-left: 500px;
+}
+a{
+    margin-right:0px;
+
+}
+ul{
+    color:aquamarine;
+}

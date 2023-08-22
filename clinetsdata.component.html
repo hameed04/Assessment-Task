@@ -1,0 +1,40 @@
+<div  class = "table" style = "width:1200px">
+    <h3>Clients Data</h3>
+    <div class="navbar-nav ms-auto">
+        <!-- <div class="input-group mb-3"> -->
+        <input type="text" name="searchstring" id="searchstring" class="form-control form-control-sm"
+          [(ngModel)]="searchstring" placeholder="Search by Client Id or Client name" title="Enter search keyword">
+        <!-- </div> -->
+      </div>
+    <div class = "card-header">
+    <a class = "btn btn-success" routerLink=" /hhhh">Add Client</a>
+    </div>
+    <div class = "card-body">
+    <table class = "table table-borderd">
+    <thead class =  "bg-dark text-white">
+    <tr>
+        <td>Client Id</td>
+        <td>Company Name</td>
+        <td>Creation Date</td>
+    <td>Assigned Member</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of clients  | paginate
+        : {
+            itemsPerPage: tableSize,
+            currentPage: page,
+            totalItems: count
+          };" >
+        <td style = "width:12%">{{data.clientid}}</td>
+        <td style = "width:25%">{{data.companyname}}</td>
+         <td style = "width:20%">{{data.creationdate}}</td>
+          <td style = "width:25%">{{data.assignedmember}}</td>
+        
+        </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    
+

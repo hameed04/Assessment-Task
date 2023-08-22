@@ -1,0 +1,37 @@
+.card{
+    width:450px;
+    height: 300px;
+    margin-left:600px;
+    margin-top: 200px;
+    background-color: burlywood;
+}
+div{
+    text-align: center;
+    align-items: center;
+    margin-top:0px;
+    
+}
+button{
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+.form-input{
+    margin-left: 10px;
+    font-size: large;
+    margin-top: 20px;
+    height:40px;
+}
+
+.form{
+    align-items: center;
+    margin-top: 30px;
+}
+
+p{
+    cursor: pointer;
+    margin-left: 20px;
+}
+
